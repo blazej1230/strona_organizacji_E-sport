@@ -1,24 +1,39 @@
 Copyright (c) 2026 Błazej
 
-Permission is hereby granted, free of charge, to any person or company 
-obtaining a copy of this software and associated documentation files 
-(the "Software"), to deal in the Software without restriction, including 
-without limitation the rights to use, copy, modify, merge, or distribute 
-copies of the Software, subject to the following conditions:
+Wolna licencja na użytek niekomercyjny (Non-Commercial Source License)
 
-1. ATTRIBUTION REQUIRED: The above copyright notice, this permission notice, 
-   and a clear link to the original source repository must be included in 
-   all copies, substantial portions, or user-facing documentation of the Software. 
-   Companies using this software must prominently credit the author.
+Każdy może korzystać z tego oprogramowania i dokumentacji (dalej: „Oprogramowanie”)
+bezpłatnie, pod warunkiem przestrzegania poniższych zasad:
 
-2. NO COMMERCIAL RESALE: This Software, in whole or in part, CANNOT BE SOLD, 
-   resold, rented, leased, or included in any commercial product or package 
-   that requires payment, a paid subscription, or financial compensation.
+1. DOZWOLONE
+   - używanie, kopiowanie, modyfikowanie i rozpowszechnianie kodu,
+   - wykorzystanie w projektach osobistych, edukacyjnych i portfolio,
+   - publikowanie zmodyfikowanych wersji (forki), o ile spełnione są warunki poniżej.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. ZAKAZ UŻYTKU KOMERCYJNEGO
+   Oprogramowania NIE WOLNO wykorzystywać w celach zarobkowych ani komercyjnych,
+   w tym m.in. do:
+   - sprzedaży, odsprzedaży, wynajmu lub licencjonowania za opłatą,
+   - produktów, usług lub subskrypcji generujących przychód,
+   - materiałów promocyjnych płatnych firm trzecich bez osobnej zgody autora.
+
+3. WYMAGANA ATRYBUCJA
+   Przy każdym wykorzystaniu kodu (w całości lub w znaczącej części) należy:
+   - zachować niniejszą informację o licencji i copyright,
+   - umieścić czytelny link do oryginalnego repozytorium autora:
+     https://github.com/blazej1230/strona_organizacji_E-sport
+   - link musi być widoczny dla użytkownika końcowego w stopce strony (footer)
+     LUB w sekcji „O nas” / „About” (lub równoważnej).
+
+4. BRAK GWARANCJI
+   Oprogramowanie jest dostarczane „TAK JAK JEST”, bez jakiejkolwiek gwarancji.
+   Autor nie ponosi odpowiedzialności za szkody wynikłe z użycia Oprogramowania.
+
+---
+
+English summary (non-binding):
+
+Free non-commercial use allowed. No commercial/profit use. Attribution required:
+keep this license, credit Błazej, and link to
+https://github.com/blazej1230/strona_organizacji_E-sport
+in the website footer or About section. Software provided "as is".

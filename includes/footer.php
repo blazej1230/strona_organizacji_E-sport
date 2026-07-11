@@ -19,7 +19,9 @@
                 <p>&copy; <?= date('Y') ?> <?= e($config['site_name']) ?>. <?= e(__('footer.rights')) ?></p>
                 <p class="site-footer__license">
                     <?= e(__('footer.license')) ?>
-                    <a href="https://github.com/" rel="noopener"><?= e($config['author']) ?></a>
+                    <a href="<?= e($config['repo_url']) ?>" target="_blank" rel="noopener noreferrer">
+                        <?= e(__('footer.repo')) ?> (<?= e($config['author']) ?>)
+                    </a>
                 </p>
             </div>
         </div>

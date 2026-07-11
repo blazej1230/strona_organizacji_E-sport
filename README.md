@@ -1,72 +1,102 @@
 # strona_organizacji_E-sport
 
-Portfolio project — bilingual (PL/EN) website for a fictional esports organization **NeonPulse Esports** (CS2, LoL, Valorant).
+**PL:** Projekt portfolio — dwujęzyczna strona (PL/EN) fikcyjnej organizacji esportowej **NeonPulse Esports** (CS2, LoL, Valorant). Zbudowana w HTML, CSS, JavaScript i PHP. Cała treść i tłumaczenia pochodzą z plików config — bez bazy danych.
 
-Built with HTML, CSS, JavaScript and PHP. All content and translations are driven by config files — no database required.
+**EN:** Portfolio project — bilingual (PL/EN) website for a fictional esports organization **NeonPulse Esports** (CS2, LoL, Valorant). Built with HTML, CSS, JavaScript and PHP. All content and translations are driven by config files — no database required.
 
-## Features
+---
 
-- 9 pages: Home, Teams, Achievements, News, Schedule, Partners, Gallery, Recruitment, Contact
-- Dark gaming UI with neon effects, particles, scroll animations
-- PL / EN language switch (session-based)
-- Contact form with PHP validation (`mail()` + fallback to log file)
-- Fully responsive layout
+## Funkcje / Features
 
-## Requirements
+| PL | EN |
+|----|-----|
+| 9 stron: Strona główna, Drużyny, Osiągnięcia, Aktualności, Harmonogram, Partnerzy, Galeria, Rekrutacja, Kontakt | 9 pages: Home, Teams, Achievements, News, Schedule, Partners, Gallery, Recruitment, Contact |
+| Ciemny interfejs gamingowy z efektami neon, particles i animacjami scroll | Dark gaming UI with neon effects, particles, scroll animations |
+| Przełącznik języka PL / EN (sesja) | PL / EN language switch (session-based) |
+| Formularz kontaktowy z walidacją PHP (`mail()` + zapis do logu) | Contact form with PHP validation (`mail()` + fallback to log file) |
+| W pełni responsywny layout | Fully responsive layout |
 
-- PHP 8.0+ (7.4 should work)
-- Web server (Apache/Nginx) or PHP built-in server
+---
 
-## Quick start
+## Wymagania / Requirements
 
-### Option 1 — PHP built-in server
+- PHP 8.0+ (powinno działać też na 7.4 / 7.4 should work)
+- Serwer WWW (Apache/Nginx) lub wbudowany serwer PHP / Web server (Apache/Nginx) or PHP built-in server
+
+---
+
+## Szybki start / Quick start
+
+### Opcja 1 / Option 1 — wbudowany serwer PHP / PHP built-in server
 
 ```bash
 cd strona_organizacji_E-sport
 php -S localhost:8000
 ```
 
-Open [http://localhost:8000](http://localhost:8000)
+Otwórz / Open [http://localhost:8000](http://localhost:8000)
 
-### Option 2 — XAMPP / Laragon
+### Opcja 2 / Option 2 — XAMPP / Laragon
 
-Copy the project folder into `htdocs` (XAMPP) or `www` (Laragon) and open it in the browser.
+**PL:** Skopiuj folder projektu do `htdocs` (XAMPP) lub `www` (Laragon) i otwórz w przeglądarce.
 
-## Project structure
+**EN:** Copy the project folder into `htdocs` (XAMPP) or `www` (Laragon) and open it in the browser.
+
+---
+
+## Struktura projektu / Project structure
 
 ```
 config/
-  config.php          # Site settings, colors, social links, stats
-  lang/pl.php         # Polish UI strings
-  lang/en.php         # English UI strings
-  data/               # Teams, news, schedule, etc.
+  config.php          # Ustawienia strony / Site settings, colors, social links, stats
+  lang/pl.php         # Polskie teksty / Polish UI strings
+  lang/en.php         # Angielskie teksty / English UI strings
+  data/               # Drużyny, newsy, harmonogram / Teams, news, schedule, etc.
 includes/
-  bootstrap.php       # Session, language, helpers
+  bootstrap.php       # Sesja, język, helpery / Session, language, helpers
   header.php / footer.php
-  components/         # Reusable card partials
+  components/         # Komponenty kart / Reusable card partials
 assets/css/           # style.css, animations.css
 assets/js/            # main.js, animations.js, particles.js
-*.php                 # Page entry points
-logs/                 # Contact form fallback (auto-created)
+*.php                 # Pliki stron / Page entry points
+logs/                 # Fallback formularza / Contact form fallback (auto-created)
 ```
 
-## Configuration
+---
 
-Edit [`config/config.php`](config/config.php) for:
+## Konfiguracja / Configuration
 
-- Organization name, colors, social media URLs
-- Contact email and mail settings
-- Navigation and homepage statistics
+Edytuj / Edit [`config/config.php`](config/config.php):
 
-Edit files in [`config/data/`](config/data/) for teams, news, matches, partners, gallery and recruitment listings.
+| PL | EN |
+|----|-----|
+| nazwę organizacji, kolory, linki do social media | organization name, colors, social media URLs |
+| e-mail kontaktowy i ustawienia poczty | contact email and mail settings |
+| nawigację i statystyki na stronie głównej | navigation and homepage statistics |
 
-Edit [`config/lang/pl.php`](config/lang/pl.php) and [`config/lang/en.php`](config/lang/en.php) for UI translations.
+- **PL:** Pliki w [`config/data/`](config/data/) — drużyny, newsy, mecze, partnerzy, galeria, rekrutacja.
+- **EN:** Files in [`config/data/`](config/data/) — teams, news, matches, partners, gallery, recruitment.
 
-## Contact form
+- **PL:** [`config/lang/pl.php`](config/lang/pl.php) i [`config/lang/en.php`](config/lang/en.php) — tłumaczenia interfejsu.
+- **EN:** [`config/lang/pl.php`](config/lang/pl.php) and [`config/lang/en.php`](config/lang/en.php) — UI translations.
 
-- Set `contact.mail_enabled` to `true` in config to use PHP `mail()`
-- On localhost (no SMTP), messages are saved to `logs/contact.log`
+---
 
-## License
+## Formularz kontaktowy / Contact form
 
-Copyright (c) 2026 Błazej — see [LICENSE](LICENSE). Attribution required.
+| PL | EN |
+|----|-----|
+| Ustaw `contact.mail_enabled` na `true` w config, aby używać PHP `mail()` | Set `contact.mail_enabled` to `true` in config to use PHP `mail()` |
+| Na localhost (bez SMTP) wiadomości trafiają do `logs/contact.log` | On localhost (no SMTP), messages are saved to `logs/contact.log` |
+
+---
+
+## Licencja / License
+
+Copyright (c) 2026 Błazej — zobacz / see [LICENSE](LICENSE).
+
+| PL | EN |
+|----|-----|
+| **Wolne użycie** w projektach osobistych, edukacyjnych i portfolio | **Free to use** for personal, educational and portfolio projects |
+| **Tylko niekomercyjnie** — bez celów zarobkowych ani płatnego użytku komercyjnego | **Non-commercial only** — no profit or paid/commercial use |
+| **Wymagana atrybucja** — zachowaj licencję i link do [repozytorium źródłowego](https://github.com/blazej1230/strona_organizacji_E-sport) w stopce lub sekcji „O nas” | **Attribution required** — keep the license and link to [the source repository](https://github.com/blazej1230/strona_organizacji_E-sport) in the footer or About section |

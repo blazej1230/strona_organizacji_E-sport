@@ -5,7 +5,7 @@ return [
     'site_url' => '',
     'default_lang' => 'pl',
     'author' => 'Błazej',
-    'repo_url' => 'https://github.com/',
+    'repo_url' => 'https://github.com/blazej1230/strona_organizacji_E-sport',
     'tagline' => [
         'pl' => 'Pulsujemy razem z grą',
         'en' => 'We pulse with the game',

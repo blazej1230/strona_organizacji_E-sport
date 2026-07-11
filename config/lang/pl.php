@@ -89,7 +89,8 @@ return [
     'contact.validation' => 'Wypełnij wszystkie pola poprawnie.',
 
     'footer.rights' => 'Wszelkie prawa zastrzeżone.',
-    'footer.license' => 'Projekt portfolio — kod na licencji autora.',
+    'footer.license' => 'Kod na licencji niekomercyjnej autora —',
+    'footer.repo' => 'repozytorium źródłowe',
 
     'game.cs2' => 'Counter-Strike 2',
     'game.lol' => 'League of Legends',
