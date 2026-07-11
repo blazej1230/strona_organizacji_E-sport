@@ -93,7 +93,7 @@ Edytuj / Edit [`config/config.php`](config/config.php):
 
 ## Licencja / License
 
-Copyright (c) 2026 Błazej — zobacz / see [LICENSE](LICENSE).
+Copyright (c) 2026 iwo2003 — zobacz / see [LICENSE](LICENSE).
 
 | PL | EN |
 |----|-----|

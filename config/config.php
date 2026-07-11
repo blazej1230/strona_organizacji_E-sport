@@ -4,8 +4,8 @@ return [
     'site_name' => 'NeonPulse Esports',
     'site_url' => '',
     'default_lang' => 'pl',
-    'author' => 'Błazej',
-    'repo_url' => 'https://github.com/blazej1230/strona_organizacji_E-sport',
+    'author' => 'iwo2003',
+    'repo_url' => 'https://github.com/iwo2003',
     'tagline' => [
         'pl' => 'Pulsujemy razem z grą',
         'en' => 'We pulse with the game',
