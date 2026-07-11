@@ -40,6 +40,7 @@ require __DIR__ . '/includes/header.php';
                         $staff = $team[$key];
                     ?>
                         <div class="staff-card card-glow">
+                            <?php $member = $staff; include __DIR__ . '/includes/components/member-avatar.php'; ?>
                             <p class="staff-card__role"><?= e(__($labelKey)) ?></p>
                             <p class="staff-card__nick"><?= e($staff['nick']) ?></p>
                             <p class="player-card__meta"><?= e($staff['name']) ?> · <?= e($staff['country']) ?></p>

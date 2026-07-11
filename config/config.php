@@ -37,6 +37,13 @@ return [
         'mail_enabled' => true,
         'log_path' => __DIR__ . '/../logs/contact.log',
     ],
+    'recruitment' => [
+        'email' => 'recruit@neonpulse.gg',
+        'mail_enabled' => true,
+        'discord_enabled' => true,
+        'discord_webhook' => '',
+        'log_path' => __DIR__ . '/../logs/recruitment.log',
+    ],
     'nav' => [
         ['page' => 'index', 'key' => 'nav.home'],
         ['page' => 'teams', 'key' => 'nav.teams'],

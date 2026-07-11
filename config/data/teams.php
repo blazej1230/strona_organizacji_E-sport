@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * Zdjęcia zawodników i sztabu — pole opcjonalne 'photo':
+ *
+ * Lokalny plik:  'photo' => 'assets/img/players/neonstrike.jpg'
+ * URL zewnętrzny: 'photo' => 'https://example.com/avatar.jpg'
+ * Bez zdjęcia:   pomiń pole — pokaże się placeholder SVG
+ */
+
 return [
     [
         'id' => 'cs2',

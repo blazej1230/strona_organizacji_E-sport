@@ -108,3 +108,34 @@ function localized(array $item, string $field): string
     }
     return $item[$field . '_pl'] ?? $item[$field] ?? '';
 }
+
+function recruitmentById(int $id): ?array
+{
+    $positions = loadData('recruitment');
+    foreach ($positions as $position) {
+        if ((int) ($position['id'] ?? 0) === $id) {
+            return $position;
+        }
+    }
+    return null;
+}
+
+function memberPhoto(?string $photo): ?string
+{
+    if ($photo === null || trim($photo) === '') {
+        return null;
+    }
+
+    $photo = trim($photo);
+
+    if (preg_match('#^https?://#i', $photo)) {
+        return $photo;
+    }
+
+    return ltrim(str_replace('\\', '/', $photo), '/');
+}
+
+function memberPhotoPlaceholder(): string
+{
+    return 'assets/img/player-placeholder.svg';
+}

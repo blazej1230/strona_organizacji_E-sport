@@ -40,7 +40,7 @@ require __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <form class="contact-form card-glow reveal" id="contact-form" method="post" action="contact-handler.php" novalidate>
+            <form class="contact-form card-form visible" id="contact-form" method="post" action="contact-handler.php" novalidate>
                 <div class="form-group">
                     <label for="name"><?= e(__('contact.name')) ?></label>
                     <input type="text" id="name" name="name" required autocomplete="name"

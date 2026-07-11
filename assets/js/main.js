@@ -3,7 +3,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         initNav();
-        initContactForm();
+        initValidatedForms();
     });
 
     function initNav() {
@@ -27,29 +27,28 @@
         });
     }
 
-    function initContactForm() {
-        var form = document.getElementById('contact-form');
-        if (!form) return;
+    function initValidatedForms() {
+        document.querySelectorAll('.validated-form, #contact-form').forEach(function (form) {
+            form.addEventListener('submit', function (e) {
+                var valid = true;
+                var fields = form.querySelectorAll('[required]');
 
-        form.addEventListener('submit', function (e) {
-            var valid = true;
-            var fields = form.querySelectorAll('[required]');
+                fields.forEach(function (field) {
+                    field.classList.remove('is-invalid');
+                    if (!field.value.trim()) {
+                        field.classList.add('is-invalid');
+                        valid = false;
+                    }
+                    if (field.type === 'email' && field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+                        field.classList.add('is-invalid');
+                        valid = false;
+                    }
+                });
 
-            fields.forEach(function (field) {
-                field.classList.remove('is-invalid');
-                if (!field.value.trim()) {
-                    field.classList.add('is-invalid');
-                    valid = false;
-                }
-                if (field.type === 'email' && field.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
-                    field.classList.add('is-invalid');
-                    valid = false;
+                if (!valid) {
+                    e.preventDefault();
                 }
             });
-
-            if (!valid) {
-                e.preventDefault();
-            }
         });
     }
 })();

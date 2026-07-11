@@ -58,6 +58,7 @@ includes/
   components/         # Komponenty kart / Reusable card partials
 assets/css/           # style.css, animations.css
 assets/js/            # main.js, animations.js, particles.js
+assets/img/players/   # Zdjęcia zawodników / Player photos
 *.php                 # Pliki stron / Page entry points
 logs/                 # Fallback formularza / Contact form fallback (auto-created)
 ```
@@ -79,6 +80,40 @@ Edytuj / Edit [`config/config.php`](config/config.php):
 
 - **PL:** [`config/lang/pl.php`](config/lang/pl.php) i [`config/lang/en.php`](config/lang/en.php) — tłumaczenia interfejsu.
 - **EN:** [`config/lang/pl.php`](config/lang/pl.php) and [`config/lang/en.php`](config/lang/en.php) — UI translations.
+
+### Zdjęcia zawodników / Player photos
+
+W [`config/data/teams.php`](config/data/teams.php) dodaj pole `photo` do zawodnika lub sztabu:
+
+| PL | EN |
+|----|-----|
+| **Plik lokalny:** wrzuć zdjęcie do `assets/img/players/` i podaj ścieżkę | **Local file:** put image in `assets/img/players/` and set path |
+| `'photo' => 'assets/img/players/neonstrike.jpg'` | `'photo' => 'assets/img/players/neonstrike.jpg'` |
+| **URL zewnętrzny:** pełny link do obrazu | **External URL:** full image link |
+| `'photo' => 'https://example.com/avatar.jpg'` | `'photo' => 'https://example.com/avatar.jpg'` |
+| **Bez zdjęcia:** pomiń pole — placeholder SVG | **No photo:** omit field — SVG placeholder shown |
+
+### Rekrutacja / Recruitment
+
+Aplikacje wysyłane są **dwoma kanałami** — e-mail i Discord webhook. Ustaw w [`config/config.php`](config/config.php):
+
+```php
+'recruitment' => [
+    'email' => 'recruit@neonpulse.gg',       // adres docelowy
+    'mail_enabled' => true,
+    'discord_enabled' => true,
+    'discord_webhook' => 'https://discord.com/api/webhooks/...',  // webhook URL
+    'log_path' => __DIR__ . '/../logs/recruitment.log',
+],
+```
+
+| PL | EN |
+|----|-----|
+| **E-mail:** aplikacja trafia na `recruitment.email` | **Email:** application sent to `recruitment.email` |
+| **Discord:** embed wysyłany na webhook serwera | **Discord:** embed posted via server webhook |
+| **Fallback:** gdy oba zawiodą → `logs/recruitment.log` | **Fallback:** if both fail → `logs/recruitment.log` |
+
+**Webhook Discord:** Ustawienia serwera → Integracje → Webhooks → Nowy webhook → skopiuj URL.
 
 ---
 

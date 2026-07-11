@@ -32,8 +32,8 @@
         <div class="lightbox__content" id="lightbox-content"></div>
     </div>
 
-    <script src="assets/js/particles.js" defer></script>
-    <script src="assets/js/animations.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/particles.js?v=1.0.2" defer></script>
+    <script src="assets/js/animations.js?v=1.0.2" defer></script>
+    <script src="assets/js/main.js?v=1.0.2" defer></script>
 </body>
 </html>

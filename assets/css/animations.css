@@ -81,8 +81,8 @@
     transition: transform 0.1s linear;
 }
 
-.card-glow:hover .player-card__avatar {
-    animation: float 2s ease-in-out infinite;
+.card-glow:hover .member-avatar__img:not(.member-avatar__img--placeholder) {
+    box-shadow: 0 0 16px rgba(0, 240, 255, 0.35);
 }
 
 /* Reduced motion */
