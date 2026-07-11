@@ -1,6 +1,8 @@
 Copyright (c) 2026 Błazej
 
-Wolna licencja na użytek niekomercyjny (Non-Commercial Source License)
+================================================================================
+POLSKI — Wolna licencja na użytek niekomercyjny
+================================================================================
 
 Każdy może korzystać z tego oprogramowania i dokumentacji (dalej: „Oprogramowanie”)
 bezpłatnie, pod warunkiem przestrzegania poniższych zasad:
@@ -29,11 +31,32 @@ bezpłatnie, pod warunkiem przestrzegania poniższych zasad:
    Oprogramowanie jest dostarczane „TAK JAK JEST”, bez jakiejkolwiek gwarancji.
    Autor nie ponosi odpowiedzialności za szkody wynikłe z użycia Oprogramowania.
 
----
+================================================================================
+ENGLISH — Non-Commercial Source License
+================================================================================
 
-English summary (non-binding):
+Anyone may use this software and associated documentation (the "Software")
+free of charge, provided the following conditions are met:
 
-Free non-commercial use allowed. No commercial/profit use. Attribution required:
-keep this license, credit Błazej, and link to
-https://github.com/blazej1230/strona_organizacji_E-sport
-in the website footer or About section. Software provided "as is".
+1. PERMITTED USE
+   - use, copy, modify and distribute the code,
+   - use in personal, educational and portfolio projects,
+   - publish modified versions (forks), as long as the conditions below are met.
+
+2. NO COMMERCIAL USE
+   The Software MUST NOT be used for commercial or profit purposes, including:
+   - selling, reselling, renting or licensing for a fee,
+   - products, services or subscriptions that generate revenue,
+   - paid promotional materials for third parties without the author's consent.
+
+3. ATTRIBUTION REQUIRED
+   When using the code (in whole or in substantial part), you must:
+   - retain this license notice and copyright information,
+   - include a clear link to the author's original repository:
+     https://github.com/blazej1230/strona_organizacji_E-sport
+   - the link must be visible to end users in the website footer
+     OR in an "About" / "O nas" section (or equivalent).
+
+4. NO WARRANTY
+   The Software is provided "AS IS", without warranty of any kind.
+   The author is not liable for any damages arising from use of the Software.
