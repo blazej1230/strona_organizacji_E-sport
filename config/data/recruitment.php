@@ -1,0 +1,40 @@
+<?php
+
+return [
+    [
+        'id' => 1,
+        'game' => 'cs2',
+        'role' => 'AWPer',
+        'title_pl' => 'AWPer — CS2',
+        'title_en' => 'AWPer — CS2',
+        'desc_pl' => 'Szukamy snajpera z doświadczeniem w ESEA Advanced lub wyżej.',
+        'desc_en' => 'We need an AWPer with ESEA Advanced experience or higher.',
+        'requirements_pl' => ['Min. 2500 ELO Faceit', 'Doświadczenie turniejowe LAN/online', 'Dostępność min. 5 dni w tygodniu', 'Komunikatywność po polsku lub angielsku'],
+        'requirements_en' => ['Min. 2500 Faceit ELO', 'LAN/online tournament experience', 'Availability at least 5 days a week', 'Communication in Polish or English'],
+        'open' => true,
+    ],
+    [
+        'id' => 2,
+        'game' => 'lol',
+        'role' => 'Support',
+        'title_pl' => 'Support — League of Legends',
+        'title_en' => 'Support — League of Legends',
+        'desc_pl' => 'Rozbudowujemy roster LoL o doświadczonego supporta.',
+        'desc_en' => 'We are expanding our LoL roster with an experienced support.',
+        'requirements_pl' => ['Master+ w solo queue', 'Znajomość meta Ultraligi', 'Doświadczenie w drużynie turniejowej', 'Pozytywne nastawienie i dyscyplina'],
+        'requirements_en' => ['Master+ solo queue', 'Ultraliga meta knowledge', 'Team tournament experience', 'Positive mindset and discipline'],
+        'open' => true,
+    ],
+    [
+        'id' => 3,
+        'game' => 'valorant',
+        'role' => 'IGL',
+        'title_pl' => 'IGL — Valorant',
+        'title_en' => 'IGL — Valorant',
+        'desc_pl' => 'Lider in-game do rosteru VCT Challengers.',
+        'desc_en' => 'In-game leader for our VCT Challengers roster.',
+        'requirements_pl' => ['Immortal 3+', 'Doświadczenie IGL min. 1 sezon', 'Analityczne myślenie', 'Gotowość do bootcampów'],
+        'requirements_en' => ['Immortal 3+', 'Min. 1 season IGL experience', 'Analytical mindset', 'Willingness to attend bootcamps'],
+        'open' => true,
+    ],
+];
