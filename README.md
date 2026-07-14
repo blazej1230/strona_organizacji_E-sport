@@ -128,7 +128,7 @@ Aplikacje wysyłane są **dwoma kanałami** — e-mail i Discord webhook. Ustaw 
 
 ## Licencja / License
 
-Copyright (c) 2026 Błazej — zobacz / see [LICENSE](LICENSE).
+Copyright (c) 2026 iwo2003 — zobacz / see [LICENSE](LICENSE).
 
 | PL | EN |
 |----|-----|
